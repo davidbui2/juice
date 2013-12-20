@@ -1,0 +1,8 @@
+acme_resume:
+    resource: "@AcmeResumeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_helloo:
+    resource: "@AcmeHellooBundle/Resources/config/routing.yml"
+    prefix:   /
+

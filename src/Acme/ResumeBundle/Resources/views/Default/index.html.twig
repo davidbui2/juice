@@ -1,0 +1,27 @@
+<div>{{ profile.name }}</div>
+<div>{{ profile.address }}</div>
+<div>{{ profile.website }}</div>
+<div>{{ profile.email }}</div>
+<div>{{ profile.phone }}</div>
+
+ <ul>
+ {% for data in highlight %}
+     <li> {{ data }}  </li>                                                 
+ {% endfor %}
+ </ul>
+ 
+
+ {% for job in jobs %}
+     	
+     <div> job id: {{ job.id }}  </div>   
+     <div> {{ job.position }}  </div> 
+     <div> {{ job.company }}  </div> 
+     <div> {{ job.startdate.date }}  </div> 
+     <div> {{ job.enddate.date }}  </div> 
+      
+     <ul>
+		 {% for data in job.experiences %}
+     		<li> {{ data }}  </li>                                                 
+ 		 {% endfor %}
+ 	 </ul>
+ {% endfor %}

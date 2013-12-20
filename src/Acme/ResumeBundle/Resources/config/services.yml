@@ -1,0 +1,7 @@
+parameters:
+#    acme_resume.example.class: Acme\ResumeBundle\Example
+
+services:
+#    acme_resume.example:
+#        class: %acme_resume.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

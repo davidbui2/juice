@@ -1,0 +1,31 @@
+acme_resume_homepage:
+    path:  /resume/
+    defaults: { _controller: AcmeResumeBundle:Default:index }
+
+acme_resume_create:
+    path:      /create/
+    defaults:  { _controller: AcmeResumeBundle:Default:create }
+
+acme_resume_profile:
+    path:      /profile/
+    defaults:  { _controller: AcmeResumeBundle:Profile:profile}
+    
+acme_resume_profile:
+    path:      /profile/{id}
+    defaults:  { _controller: AcmeResumeBundle:Profile:profile, id: 1 }
+
+acme_resume_job:
+    path:      /job/{id}
+    defaults:  { _controller: AcmeResumeBundle:Job:job}
+    
+acme_resume_highlight:
+    path:      /highlight/
+    defaults:  { _controller: AcmeResumeBundle:Highlight:highlight}
+    
+acme_resume_jobs:
+    path:      /jobs/{startdate}/{enddate}
+    defaults:  { _controller: AcmeResumeBundle:Job:jobs}
+    
+acme_resume_experiences:
+    path:      /experiences/
+    defaults:  { _controller: AcmeResumeBundle:Experience:experiences}
